@@ -13,13 +13,22 @@ div {
 }
 
 .grid {
-  width: 300px;
+  width: 80%;
   height: 100%;
   margin: 3rem auto;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 400px 240px 240px 400px 500px;
   grid-row-gap: 2rem;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.cardWhite .contributerInformation,
+.cardWhite .contributerInput {
+  color: black;
 }
 
 .testimonialHeader {
@@ -61,6 +70,7 @@ div {
 }
 
 .testimonialFooter {
+  width: 80%;
   margin-top: 5rem;
   font-size: 1.7rem;
   z-index: 1;
@@ -82,23 +92,28 @@ div {
   line-height: 1.6rem;
   font-weight: 500;
 }
-
+/* first testimonial card */
 .testimonial1 {
   background-color: hsl(263, 55%, 52%);
 }
-
+/* 2nd testimonial card */
 .testimonial2 {
   background-color: hsl(217, 19%, 35%);
 }
 
+.testimonial2 .contributerInput {
+  font-size: 1.9rem;
+  line-height: 2.2rem;
+}
+/* 3rd testimonial card*/
 .testimonial3 {
   background-color: hsl(0, 0%, 100%);
 }
-
+/* 4th testimonial card */
 .testimonial4 {
   background-color: hsl(219, 29%, 14%);
 }
-
+/* Last Testimonial card */
 .testimonial5 {
   background-color: hsl(0, 0%, 100%);
 }

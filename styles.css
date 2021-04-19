@@ -70,7 +70,7 @@ div {
 }
 
 .testimonialFooter {
-  width: 80%;
+  max-width: 80%;
   margin-top: 5rem;
   font-size: 1.7rem;
   z-index: 1;
@@ -116,4 +116,61 @@ div {
 /* Last Testimonial card */
 .testimonial5 {
   background-color: hsl(0, 0%, 100%);
+}
+
+@media screen and (min-width: 1024px) {
+  .contributerInput {
+    font-size: 1rem;
+  }
+  .contributerInput :nth-child(2) {
+    font-size: 1rem;
+  }
+  .grid {
+    margin: 10rem auto;
+    width: 960px;
+    max-height: 500px;
+    grid-template-columns: 250px 230px 220px 200px;
+    grid-template-rows: 250px 300px;
+    grid-column-gap: 1rem;
+    grid-template-areas: "first first third fourth" "fifth sixth sixth fourth";
+  }
+
+  .testimonialFooter {
+    width: 450px;
+  }
+
+  .footer2 {
+    width: 230px;
+  }
+
+  .footer3 {
+    width: 200px;
+  }
+  .footer5 {
+    width: 260px;
+  }
+
+  .footer5 .contributerInput {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+  }
+
+  .contributerInput {
+    font-size: 1rem;
+  }
+
+  .testimonial1 {
+    grid-area: first;
+  }
+  .testimonial2 {
+    grid-area: third;
+  }
+
+  .testimonial3 {
+    grid-area: fourth;
+  }
+
+  .testimonial4 {
+    grid-area: sixth;
+  }
 }
